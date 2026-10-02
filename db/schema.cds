@@ -12,5 +12,6 @@ entity items {
     key ID : Integer;
     name : String(10);
     value : String(10);
+    detail : String(90);
     
 }
