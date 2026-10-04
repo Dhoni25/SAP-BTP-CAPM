@@ -1,1 +1,39 @@
-GET http://localhost:4004 /odata/v4/service/employee
+GET http://localhost:4004 /odata/v4/employee/Employees
+
+
+###
+POST http://localhost:4004/odata/v4/employee/Employees
+Content-Type: application/json
+
+{
+      "ID": 2,
+    "name": "Praveen",
+    "email": "praveen@gmail.com",
+    "department": "HR",
+    "salary": "35000.00"
+}
+
+###
+PATCH http://localhost:4004/odata/v4/employee/Employees(1)
+Content-Type: application/json
+
+{
+    "name": "Dhoni",
+    "department": "SAP"
+}
+
+
+###
+PUT http://localhost:4004/odata/v4/employee/Employees(2)
+Content-Type: application/json
+
+{
+    "name": "Praveen Kumar",
+    "email": "praveenkumar@gmail.com",
+    "department": "IT",
+    "salary": 45000.00
+}
+
+
+###
+DELETE http://localhost:4004/odata/v4/employee/Employees(2)
