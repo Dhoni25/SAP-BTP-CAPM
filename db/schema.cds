@@ -6,7 +6,7 @@ entity Employees {
         email      : String(100);
         department : String(50);
         salary     : Decimal(10, 2);
-        items      : Association to many items
+        items      : Association to  many items
                          on items.Employees = $self;
 }
 
